@@ -53,3 +53,17 @@
   --ring: 140 70% 60%;
   --input: 140 20% 20%;
 }
+
+.ecol-theme {
+  --primary: 240 99% 48%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 240 99% 48%;
+  --input: 240 20% 85%;
+}
+
+.dark .ecol-theme {
+  --primary: 240 99% 60%;
+  --primary-foreground: 0 0% 100%;
+  --ring: 240 99% 60%;
+  --input: 240 20% 20%;
+}

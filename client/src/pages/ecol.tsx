@@ -197,7 +197,7 @@ export default function EColPage() {
               className="mr-2"
             >
               {logoutMutation.isPending ? (
-                <Loader2 className="h-4 w-4 animate-spin text-teal-300" />
+                <Loader2 className="h-4 w-4 animate-spin text-[#2100F2]/50" />
               ) : (
                 <LogOut className="h-4 w-4" />
               )}
@@ -207,7 +207,7 @@ export default function EColPage() {
       </header>
 
       <main className="container mx-auto px-0.5 py-4 flex-1">
-        <Card className="shadow-md rounded-lg mx-0 transition-all duration-300 hover:shadow-xl transform translate-y-0 border border-teal-100/50 bg-gradient-to-b from-white to-teal-50/30 hover:bg-gradient-to-b hover:from-white hover:to-teal-100/50 epoxy-theme">
+        <Card className="shadow-md rounded-lg mx-0 transition-all duration-300 hover:shadow-xl transform translate-y-0 border border-[#2100F2]/20 bg-gradient-to-b from-white to-[#2100F2]/10 hover:bg-gradient-to-b hover:from-white hover:to-[#2100F2]/20 ecol-theme">
           <CardContent className="p-1">
             <div className="flex flex-row gap-2 mb-4 overflow-x-auto">
               <div className="min-w-0 flex-1">
@@ -217,19 +217,19 @@ export default function EColPage() {
                       placeholder="Factory Colour"
                       value={factoryColor}
                       onChange={(e) => setFactoryColor(e.target.value)}
-                      className="h-9 text-sm pr-8 border-teal-200 focus:border-teal-400 hover:border-teal-300"
+                      className="h-9 text-sm pr-8 border-[#2100F2]/30 focus:border-[#2100F2] hover:border-[#2100F2]"
                     />
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-teal-50"
+                      className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-[#2100F2]/10"
                       onClick={() => startListening('factoryColor')}
                       disabled={isListening}
                     >
                       {isListening && activeInput === 'factoryColor' ? (
-                        <MicOff className="h-4 w-4 text-teal-500" />
+                        <MicOff className="h-4 w-4 text-[#2100F2]" />
                       ) : (
-                        <Mic className="h-4 w-4 text-teal-400 hover:text-teal-600" />
+                        <Mic className="h-4 w-4 text-[#2100F2]/70 hover:text-[#2100F2]" />
                       )}
                     </Button>
                   </div>
@@ -241,19 +241,19 @@ export default function EColPage() {
                     placeholder="Sub Colour"
                     value={subColor}
                     onChange={(e) => setSubColor(e.target.value)}
-                    className="h-9 text-sm pr-8 border-teal-200 focus:border-teal-400 hover:border-teal-300"
+                    className="h-9 text-sm pr-8 border-[#2100F2]/30 focus:border-[#2100F2] hover:border-[#2100F2]"
                   />
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-teal-50"
+                    className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-[#2100F2]/10"
                     onClick={() => startListening('subColor')}
                     disabled={isListening}
                   >
                     {isListening && activeInput === 'subColor' ? (
-                      <MicOff className="h-4 w-4 text-teal-500" />
+                      <MicOff className="h-4 w-4 text-[#2100F2]" />
                     ) : (
-                      <Mic className="h-4 w-4 text-teal-400 hover:text-teal-600" />
+                      <Mic className="h-4 w-4 text-[#2100F2]/70 hover:text-[#2100F2]" />
                     )}
                   </Button>
                 </div>
@@ -264,19 +264,19 @@ export default function EColPage() {
                     placeholder="Type"
                     value={type}
                     onChange={(e) => setType(e.target.value)}
-                    className="h-9 text-sm pr-8 border-teal-200 focus:border-teal-400 hover:border-teal-300"
+                    className="h-9 text-sm pr-8 border-[#2100F2]/30 focus:border-[#2100F2] hover:border-[#2100F2]"
                   />
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-teal-50"
+                    className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 hover:bg-[#2100F2]/10"
                     onClick={() => startListening('type')}
                     disabled={isListening}
                   >
                     {isListening && activeInput === 'type' ? (
-                      <MicOff className="h-4 w-4 text-teal-500" />
+                      <MicOff className="h-4 w-4 text-[#2100F2]" />
                     ) : (
-                      <Mic className="h-4 w-4 text-teal-400 hover:text-teal-600" />
+                      <Mic className="h-4 w-4 text-[#2100F2]/70 hover:text-[#2100F2]" />
                     )}
                   </Button>
                 </div>
@@ -287,7 +287,7 @@ export default function EColPage() {
                 variant="outline" 
                 size="sm" 
                 onClick={() => setLocation('/epoxy')} 
-                className="h-9 flex gap-2 items-center bg-teal-100 hover:bg-teal-200 text-teal-800 hover:text-teal-900 border-teal-200 hover:border-teal-300"
+                className="h-9 flex gap-2 items-center bg-[#2100F2]/10 hover:bg-[#2100F2]/20 text-[#2100F2] hover:text-[#2100F2] border-[#2100F2]/30 hover:border-[#2100F2]/50"
               >
                 <ArrowLeft className="h-4 w-4" />
                 Back
@@ -300,7 +300,7 @@ export default function EColPage() {
                   e.stopPropagation();
                   handleClear();
                 }} 
-                className="h-9 bg-teal-600 hover:bg-teal-700 text-white"
+                className="h-9 bg-[#2100F2] hover:bg-[#2100F2]/80 text-white"
               >
                 Clear
               </Button>
@@ -315,12 +315,12 @@ export default function EColPage() {
 
             {isLoading ? (
               <div className="flex justify-center my-8">
-                <Loader2 className="h-8 w-8 animate-spin text-teal-500" />
+                <Loader2 className="h-8 w-8 animate-spin text-[#2100F2]" />
               </div>
             ) : results?.length ? (
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-teal-700 hover:bg-teal-800">
+                  <TableRow className="bg-[#2100F2] hover:bg-[#2100F2]/90">
                     {visibleColumns.map(column => (
                       <TableHead key={column} className="font-bold text-white">
                         {columnDisplayNames[column] || column}
@@ -330,7 +330,7 @@ export default function EColPage() {
                 </TableHeader>
                 <TableBody>
                   {results.map((result, i) => (
-                    <TableRow key={i} className={`${i % 2 === 0 ? "bg-white hover:bg-teal-50" : "bg-teal-50 hover:bg-teal-100"}`}>
+                    <TableRow key={i} className={`${i % 2 === 0 ? "bg-white hover:bg-[#2100F2]/5" : "bg-[#2100F2]/5 hover:bg-[#2100F2]/10"}`}>
                       {visibleColumns.map(column => (
                         <TableCell key={column}>{result[column as keyof typeof result]}</TableCell>
                       ))}
